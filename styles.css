@@ -123,6 +123,18 @@ section:last-of-type {
   padding: 10px 20px 10px 10px;
 }
 
+#bio-section--quote-container > h2 {
+  text-align: left;
+  color: white;
+  margin: 0;
+}
+
+#bio-section--quote-container > p {
+  text-align: right;
+  color: white;
+  margin: 0;
+}
+
 #centralcolumn--img-caption {
   max-width: 768px;
   width: 100%;
