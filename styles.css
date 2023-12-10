@@ -57,26 +57,27 @@ section {
 }
 
 .centralcolumn {
+  max-width: 1580px;
   width: 100%;
   padding: 0 5vw;
   overflow: hidden;
+  position: relative;
   display: block;
   z-index: 100;
 }
 
-@media (min-width: 601px) {
+@media (max-width: 880px) {
   .centralcolumn {
-    max-width: 1580px;
-    float: none;
+    width: 100%;
+    float: left;
     padding-left: 5vw;
     padding-right: 10px;
+    background-color: transparent;
   }
 }
 
-@media (min-width: 881px) {
+@media (max-width: 600px) {
   .centralcolumn {
-    max-width: 1580px;
-    float: none;
     padding-left: 10px;
     padding-right: 10px;
     background-color: transparent;
@@ -517,12 +518,19 @@ img {
   height: 100%;
   object-fit: fill;
   opacity: 1;
+  display: block;
   -webkit-transition: opacity 0.5s; /* For Safari 3.1 to 6.0 */
   transition: opacity 0.5s;
 }
 
+.image {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 #image {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   object-fit: cover;
 }
