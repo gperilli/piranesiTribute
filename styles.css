@@ -31,15 +31,15 @@ body {
 }
 
 #main {
-  margin: 0px 0px;
-  padding: 0px;
-  border-radius: 0px;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
   background-color: transparent;
 }
 
-@media (max-width: 460px) {
+@media (min-width: 461px) {
   #main {
-    margin: 0;
+    margin: 0 0;
   }
 }
 
@@ -50,7 +50,7 @@ section {
   margin: 50px 0;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 769px) {
   section {
     margin: 200px 0;
   }
@@ -82,7 +82,6 @@ section {
     background-color: transparent;
   }
 }
-
 
 /* bio section */
 #bio-section {
@@ -140,7 +139,7 @@ section {
 }
 
 #centralcolumn--img-caption {
-  max-width: 768px;
+  max-width: 769px;
   width: 100%;
   padding: 0 10px;
   overflow: hidden;
@@ -148,7 +147,7 @@ section {
   display: block;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   #bio-section {
     position: relative;
     min-height: 50vh;
@@ -201,7 +200,6 @@ h1 {
     font-size: 3.5rem;
   }
 }
-
 
 /* Base styles for mobile */
 .h1-main--larger {
@@ -259,18 +257,6 @@ h3.section-title-under {
   text-align: left;
   margin-top: 0px;
   margin-bottom: 50px;
-}
-
-@media (min-width: 700px) {
-  h3.section-title-under {
-    margin-bottom: 100px;
-  }
-}
-
-@media (min-width: 700px) {
-  h3.section-title-under {
-    margin-bottom: 50px;
-  }
 }
 
 a {
@@ -387,7 +373,7 @@ blockquote {
     clear: both;
   }
 
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 769px) {
     &:before {
       left: calc(50% - 1px);
       right: auto;
@@ -421,7 +407,7 @@ li.timeline__item:before {
   transform: rotate(45deg);
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 769px) {
   li.timeline__item {
     width: 44%;
     margin: 1rem;
@@ -465,7 +451,7 @@ li.timeline__item:before {
     display: none;
   }
 
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 769px) {
     text-align: right;
       margin: 0 auto;
 
@@ -491,11 +477,12 @@ h4.timeline__title {
 
 #img-caption {
   padding: 15px 10px 5px 0;
+  font-size: 1.4rem;
 }
 
-@media (max-width: 460px) {
+@media (min-width: 461px) {
   #img-caption {
-    font-size: 1.4rem;
+    font-size: initial;
   }
 }
 
@@ -507,7 +494,7 @@ h4.timeline__title {
   padding-bottom: 60px;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 769px) {
   .figure-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -569,13 +556,13 @@ figure {
   margin: 0;
 }
 
-@media screen and (min-width: 701px) {
+@media screen and (min-width: 769px) {
   figure {
     width: 100%
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
   figure {
     width: 100%;
   }
