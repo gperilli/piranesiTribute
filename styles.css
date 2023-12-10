@@ -224,6 +224,7 @@ h1 {
   display: block;
   letter-spacing: 0.3em;
   margin-right: -0.3em;
+  font-size: clamp(1.5rem, 0.7vw + 1.5rem, 4rem);
 }
 
 .h1--sub {
