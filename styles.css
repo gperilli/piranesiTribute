@@ -282,7 +282,7 @@ header {
     rgba(0, 0, 0, 0) 0%,
     rgba(0, 0, 0, 1) 100%
     ),
-    url(/assets/images/piranesi-portrait.png);
+    url(/piranesiTribute/assets/images/piranesi-portrait.png);
   background-size: cover;
   background-position: 0vw 20%;
   background-repeat: no-repeat;
